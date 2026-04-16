@@ -1,0 +1,62 @@
+{
+  "app": {
+    "title": "MathUniverse",
+    "subtitle": "Explore the infinite boundaries of human mathematical knowledge",
+    "loading": "Loading..."
+  },
+  "nav": {
+    "home": "Home",
+    "explore": "Explore",
+    "about": "About",
+    "search": "Search mathematical fields..."
+  },
+  "categories": {
+    "all": "All Fields",
+    "algebra": "Algebra",
+    "geometry": "Geometry",
+    "analysis": "Analysis",
+    "topology": "Topology",
+    "probability": "Probability",
+    "discrete": "Discrete Math",
+    "applied": "Applied Math",
+    "mathphysics": "Mathematical Physics",
+    "numbertheory": "Number Theory",
+    "combinatorics": "Combinatorics"
+  },
+  "detail": {
+    "back": "Back",
+    "close": "Close",
+    "basics": "Basics",
+    "principles": "Principles",
+    "formulas": "Core Formulas",
+    "pioneers": "Pioneers",
+    "history": "History",
+    "figures": "Figures",
+    "references": "References",
+    "relatedFields": "Related Fields",
+    "applications": "Applications",
+    "definition": "Definition",
+    "scope": "Scope",
+    "importance": "Importance",
+    "difficulty": "Difficulty",
+    "variables": "Variables",
+    "applications_of_formula": "Applications",
+    "copyFormula": "Copy",
+    "editFormula": "Edit",
+    "viewSource": "View Source"
+  },
+  "search": {
+    "placeholder": "Search mathematical fields...",
+    "noResults": "No results found",
+    "results": "Found {{count}} fields"
+  },
+  "3d": {
+    "hint": "Drag to rotate · Scroll to zoom · Click for details",
+    "focus": "Focus",
+    "reset": "Reset View"
+  },
+  "errors": {
+    "loadFailed": "Failed to load",
+    "notFound": "Content not found"
+  }
+}

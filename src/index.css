@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 宇宙主题色彩 */
+  --bg-primary: #0a0a1a;
+  --bg-secondary: #0d1117;
+  --bg-tertiary: #161b22;
+  
+  --accent-primary: #6366f1;
+  --accent-secondary: #8b5cf6;
+  --accent-glow: #22d3ee;
+  
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  
+  /* 学科色彩 */
+  --algebra: #8b5cf6;
+  --geometry: #06b6d4;
+  --analysis: #f59e0b;
+  --topology: #ec4899;
+  --probability: #22c55e;
+  --discrete: #3b82f6;
+  --applied: #14b8a6;
+  --mathphysics: #f43f5e;
+  --numbertheory: #a855f7;
+  --combinatorics: #06b6d4;
+  
+  /* 字体 */
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-chinese: 'Noto Sans SC', 'PingFang SC', sans-serif;
+  --font-math: 'STIX Two Math', 'Times New Roman', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body), var(--font-chinese);
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--accent-secondary), var(--accent-primary));
+}
+
+/* 动画 */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes star-twinkle {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes nebula-drift {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(10px, -10px) rotate(1deg);
+  }
+  50% {
+    transform: translate(0, -20px) rotate(0deg);
+  }
+  75% {
+    transform: translate(-10px, -10px) rotate(-1deg);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: star-twinkle 2s ease-in-out infinite;
+}
+
+.animate-nebula {
+  animation: nebula-drift 20s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* KaTeX 样式覆盖 */
+.katex {
+  font-size: 1.1em !important;
+  color: var(--text-primary) !important;
+}
+
+.katex-display {
+  margin: 1rem 0 !important;
+  padding: 1rem !important;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1)) !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(99, 102, 241, 0.2) !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.katex-display > .katex {
+  color: var(--accent-glow) !important;
+}
+
+/* 玻璃态效果 */
+.glass {
+  background: rgba(13, 17, 23, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(99, 102, 241, 0.25) !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+}
+
+.glass-light {
+  background: rgba(22, 27, 34, 0.7) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(99, 102, 241, 0.15) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* 辉光效果 */
+.glow-primary {
+  box-shadow: 
+    0 0 20px rgba(99, 102, 241, 0.4), 
+    0 0 40px rgba(99, 102, 241, 0.2),
+    0 0 60px rgba(99, 102, 241, 0.1);
+}
+
+.glow-accent {
+  box-shadow: 
+    0 0 20px rgba(34, 211, 238, 0.4), 
+    0 0 40px rgba(34, 211, 238, 0.2),
+    0 0 60px rgba(34, 211, 238, 0.1);
+}
+
+.text-glow {
+  text-shadow: 
+    0 0 10px rgba(99, 102, 241, 0.6), 
+    0 0 20px rgba(99, 102, 241, 0.4),
+    0 0 30px rgba(99, 102, 241, 0.2);
+}
+
+/* 渐变背景 */
+.bg-gradient-cosmic {
+  background: 
+    radial-gradient(ellipse at 30% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at center, #1a1a2e 0%, #0a0a1a 50%, #050510 100%);
+}
+
+.bg-gradient-mesh {
+  background: 
+    radial-gradient(at 40% 20%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(34, 211, 238, 0.1) 0px, transparent 50%),
+    radial-gradient(at 60% 80%, rgba(236, 72, 153, 0.05) 0px, transparent 50%),
+    var(--bg-primary);
+}
+
+/* 按钮悬停效果 */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.btn-glow:hover::before {
+  left: 100%;
+}
+
+/* 输入框焦点效果 */
+input:focus, textarea:focus {
+  box-shadow: 
+    0 0 0 2px rgba(99, 102, 241, 0.3),
+    0 0 20px rgba(99, 102, 241, 0.1) !important;
+}
+
+/* 响应式字体 */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}

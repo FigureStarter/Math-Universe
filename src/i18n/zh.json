@@ -1,0 +1,62 @@
+{
+  "app": {
+    "title": "数学宇宙",
+    "subtitle": "探索人类数学知识的无限边界",
+    "loading": "正在加载..."
+  },
+  "nav": {
+    "home": "首页",
+    "explore": "探索",
+    "about": "关于",
+    "search": "搜索数学领域..."
+  },
+  "categories": {
+    "all": "全部领域",
+    "algebra": "代数学",
+    "geometry": "几何学",
+    "analysis": "分析学",
+    "topology": "拓扑学",
+    "probability": "概率论",
+    "discrete": "离散数学",
+    "applied": "应用数学",
+    "mathphysics": "数学物理",
+    "numbertheory": "数论",
+    "combinatorics": "组合数学"
+  },
+  "detail": {
+    "back": "返回",
+    "close": "关闭",
+    "basics": "基本信息",
+    "principles": "基本原理",
+    "formulas": "核心公式",
+    "pioneers": "先驱人物",
+    "history": "发展历史",
+    "figures": "图示",
+    "references": "参考资料",
+    "relatedFields": "相关领域",
+    "applications": "应用场景",
+    "definition": "定义",
+    "scope": "研究范围",
+    "importance": "重要性",
+    "difficulty": "难度",
+    "variables": "变量说明",
+    "applications_of_formula": "应用场景",
+    "copyFormula": "复制公式",
+    "editFormula": "编辑公式",
+    "viewSource": "查看来源"
+  },
+  "search": {
+    "placeholder": "搜索数学领域...",
+    "noResults": "未找到相关领域",
+    "results": "找到 {{count}} 个相关领域"
+  },
+  "3d": {
+    "hint": "拖拽旋转 · 滚轮缩放 · 点击查看详情",
+    "focus": "聚焦",
+    "reset": "重置视角"
+  },
+  "errors": {
+    "loadFailed": "加载失败",
+    "notFound": "内容未找到"
+  }
+}
