@@ -17,6 +17,12 @@
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **Modern Architecture**: Built with React 18, TypeScript, and modern web technologies
 
+### Screenshots
+
+![Math Universe - Main View](assets/math-universe.png)
+
+![Math Universe - Sphere Variants](assets/math-universe2.png)
+
 ### Tech Stack
 
 - **Frontend Framework**: React 18.2.0
