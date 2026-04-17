@@ -38,7 +38,7 @@ export function KaTeX({ latex, displayMode = true }: KaTeXProps) {
   return (
     <div
       ref={containerRef}
-      className={`${displayMode ? 'katex-display' : 'katex-inline'}`}
+      className={`${displayMode ? 'katex-display' : 'katex-inline'} overflow-x-auto max-w-full`}
     />
   );
 }

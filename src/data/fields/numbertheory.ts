@@ -24,7 +24,7 @@ export const numbertheoryFields: FieldNode[] = [
         { year: 1859, event: { zh: '黎曼假设提出', en: 'Riemann hypothesis posed' } },
         { year: 1995, event: { zh: '怀尔斯证明费马大定理', en: 'Wiles proves Fermat\'s Last Theorem' } }
       ],
-      tags: ['number-theory']
+      tags: ['numbertheory']
     },
     principles: [
       { id: 'nt1', title: { zh: '算术基本定理', en: 'Fundamental Theorem of Arithmetic' }, description: { zh: '每个大于1的整数可以唯一地表示为素数的乘积', en: 'Every integer > 1 can be uniquely expressed as a product of primes' }, importance: 3 },
@@ -76,7 +76,7 @@ export const numbertheoryFields: FieldNode[] = [
     descriptions: { zh: '不依赖高等分析方法，仅用整数本身的性质研究整除性、素数、同余、算术函数等问题。', en: 'Studies divisibility, primes, congruences, arithmetic functions using only intrinsic integer properties without advanced analysis.' },
     level: 2, parentId: 'numbertheory', childIds: [],
     position: [0, 0, 0], size: 'medium', color: '#c084fc',
-    tags: ['number-theory'],
+    tags: ['numbertheory'],
     basics: {
       definition: { zh: '初等数论以整除理论和同余理论为核心，涵盖素数、最大公约数、算术函数等基本内容。', en: 'Elementary number theory centers on divisibility and congruence theories, covering primes, GCD, arithmetic functions.' },
       scope: { zh: '整除性与最大公约数、素数与因式分解、同余与中国剩余定理、算术函数（φ、σ、μ）、原根与指数。', en: 'Divisibility & GCD, primes & factorization, CRT & congruences, arithmetic functions (φ, σ, μ), primitive roots & indices.' },
@@ -121,7 +121,7 @@ export const numbertheoryFields: FieldNode[] = [
     descriptions: { zh: '使用分析学工具（特别是复分析和调和分析）来解决关于整数的问题，核心是素数分布。', en: 'Uses analysis tools (especially complex and harmonic analysis) to solve problems about integers; core focus is prime distribution.' },
     level: 2, parentId: 'numbertheory', childIds: [],
     position: [0, 0, 0], size: 'medium', color: '#a855f7',
-    tags: ['number-theory', 'analysis'],
+    tags: ['numbertheory', 'analysis'],
     basics: {
       definition: { zh: '解析数论通过黎曼ζ函数、狄利克雷级数等解析工具研究素数分布、加性问题等深刻的整数性质。', en: 'Analytic number theory studies profound integer properties—prime distribution, additive problems—via ζ-functions, Dirichlet series, etc.' },
       scope: { zh: '黎曼ζ函数、素数定理、黎曼猜想、狄利克雷定理、筛法、指数和方法、模形式。', en: 'Riemann zeta, Prime Number Theorem, Riemann Hypothesis, Dirichlet\'s theorem, sieve methods, circle method, modular forms.' },
@@ -161,7 +161,7 @@ export const numbertheoryFields: FieldNode[] = [
     descriptions: { zh: '将代数数（有理系数多项式的根）作为研究对象，推广整数的概念到代数整数环的理想理论。', en: 'Studies algebraic numbers (roots of rational-coefficient polynomials), extending integer concepts to ideals in rings of algebraic integers.' },
     level: 2, parentId: 'numbertheory', childIds: [],
     position: [0, 0, 0], size: 'medium', color: '#9333ea',
-    tags: ['number-theory', 'algebra'],
+    tags: ['numbertheory', 'algebra'],
     basics: {
       definition: { zh: '代数数论在有理数域Q的扩张（代数数域）上研究"整数"的推广（代数整数），以及理想类群、单位群、伽罗瓦作用等。', en: 'Algebraic number theory studies "integers" generalized to algebraic integers over extensions K/Q, plus ideal class groups, unit groups, Galois action.' },
       scope: { zh: '代数数域、代数整数、理想分解、理想类群、单位定理、类域论、伽罗瓦表示。', en: 'Number fields, algebraic integers, ideal decomposition, class group, unit theorem, class field theory, Galois representations.' },
@@ -200,7 +200,7 @@ export const numbertheoryFields: FieldNode[] = [
     descriptions: { zh: '研究数论问题的高效算法实现，包括素数测试、大整数分解、离散对数等，是现代密码学的基石。', en: 'Studies efficient algorithms for number theory problems: primality testing, integer factorization, discrete logs — foundation of modern cryptography.' },
     level: 2, parentId: 'numbertheory', childIds: [],
     position: [0, 0, 0], size: 'small', color: '#7e22ce',
-    tags: ['number-theory', 'cs', 'cryptography'],
+    tags: ['numbertheory', 'cs', 'cryptography'],
     basics: {
       definition: { zh: '计算数论致力于设计高效的算法来解决数论中的判定和搜索问题，其成果直接支撑着公钥密码系统的安全。', en: 'Computational number theory designs efficient algorithms for decision/search problems in NT; results directly underpin public-key crypto security.' },
       scope: { zh: '素性测试（Miller-Rabin、AKS）、因式分解算法（Pollard ρ、GNFS）、离散对数、椭圆曲线算法、格基规约。', en: 'Primality tests (Miller-Rabin, AKS), factorization (Pollard ρ, GNFS), discrete log, elliptic curve algorithms, lattice reduction.' },
@@ -235,7 +235,7 @@ export const numbertheoryFields: FieldNode[] = [
     descriptions: { zh: '研究整数按加法表示的性质，如哥德巴赫猜想、华林问题和分拆函数。', en: 'Studies properties of integers expressed by addition, such as Goldbach conjecture, Waring problem, partition function.' },
     level: 2, parentId: 'numbertheory', childIds: [],
     position: [0, 0, 0], size: 'small', color: '#6b21a8',
-    tags: ['number-theory', 'combinatorics', 'analysis'],
+    tags: ['numbertheory', 'combinatorics', 'analysis'],
     basics: {
       definition: { zh: '加性数论关注整数能否表示为某种形式的和，以及表示方式的计数问题。', en: 'Additive number theory concerns whether integers can be expressed as sums of certain forms, and counting representations.' },
       scope: { zh: '哥德巴赫猜想、华林问题、分拆函数、哥德巴赫-维诺格拉多夫定理、筛法应用。', en: 'Goldbach conjecture, Waring problem, partition function, Vinogradov theorem, sieve applications.' },

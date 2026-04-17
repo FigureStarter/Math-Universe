@@ -6,18 +6,20 @@ import { FieldNodes } from './FieldNodes';
 import Connections from './Connections';
 import Particles from './Particles';
 import CameraController from './CameraController';
-import { useFieldStore } from '@/stores/fieldStore';
+import { useFieldStore, getFilteredFields } from '@/stores/fieldStore';
 
 export default function Scene() {
   // 优化的背景色
   const backgroundColor = useMemo(() => new THREE.Color('#0a0a1a'), []);
 
   // 从 store 获取节点数据
-  const { fields, selectedField, setSelectedField, filterMode } = useFieldStore();
-  const filteredFields = filterMode === 'all' ? fields : fields.filter(f => f.tags.includes(filterMode));
+  const filteredFields = useFieldStore(
+    (state) => getFilteredFields(state.fields, state.filterMode)
+  );
+  const { selectedField, setSelectedField, isAutoRotating } = useFieldStore();
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full absolute inset-0">
       <Canvas
         camera={{ position: [0, 0, 30], fov: 60, near: 0.1, far: 1000 }}
         gl={{
@@ -74,7 +76,7 @@ export default function Scene() {
           enableZoom={true}
           minDistance={15}
           maxDistance={80}
-          autoRotate
+          autoRotate={isAutoRotating}
           autoRotateSpeed={0.3}
           enableDamping
           dampingFactor={0.05}

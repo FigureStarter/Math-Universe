@@ -191,7 +191,7 @@ export const geometryFields: FieldNode[] = [
     },
     level: 2, parentId: 'geometry', childIds: [],
     position: [0, 0, 0], size: 'medium', color: '#22d3ee',
-    tags: ['analytic', 'coordinate', 'algebraic-method'],
+    tags: ['geometry', 'analytic', 'coordinate', 'algebraic-method'],
     basics: {
       definition: { zh: '利用坐标系（直角坐标、极坐标等）将几何问题转化为代数问题求解的方法。', en: 'Method that transforms geometric problems into algebraic problems using coordinate systems (Cartesian, polar, etc.).' },
       scope: { zh: '平面/空间坐标系、二次曲线与曲面、向量法、参数方程、坐标变换。', en: 'Planar/spatial coordinate systems, conics & quadrics, vector methods, parametric equations, coordinate transformations.' },
@@ -234,7 +234,7 @@ export const geometryFields: FieldNode[] = [
     },
     level: 2, parentId: 'geometry', childIds: [],
     position: [0, 0, 0], size: 'small', color: '#0e7490',
-    tags: ['differential', 'curvature', 'manifold'],
+    tags: ['differential-geometry', 'differential', 'curvature', 'manifold'],
     basics: {
       definition: { zh: '应用微积分工具分析光滑曲线和曲面的几何性质，如曲率、挠率、第一/第二基本形式等。', en: 'Applies calculus tools to analyze geometric properties of smooth curves and surfaces: curvature, torsion, first/second fundamental forms.' },
       scope: { zh: '曲线论、曲面论、流形初步、联络与协变导数。', en: 'Curve theory, surface theory, manifold introduction, connections and covariant derivatives.' },
@@ -286,7 +286,7 @@ export const geometryFields: FieldNode[] = [
     },
     level: 2, parentId: 'geometry', childIds: [],
     position: [0, 0, 0], size: 'small', color: '#06b6d4',
-    tags: ['discrete', 'combinatorial', 'packing'],
+    tags: ['geometry', 'discrete', 'combinatorial', 'packing'],
     basics: {
       definition: { zh: '研究由有限或可数个离散元素构成的几何对象及其排列、覆盖等问题。', en: 'Studies geometric objects composed of finite or countably many discrete elements and their arrangements, coverings, etc.' },
       scope: { zh: '密铺问题、堆积问题、欧拉图、拉姆塞几何、几何计数。', en: 'Tessellations, packing problems, Eulerian graphs, geometric Ramsey theory, geometric enumeration.' },
@@ -324,7 +324,7 @@ export const geometryFields: FieldNode[] = [
     },
     level: 2, parentId: 'geometry', childIds: [],
     position: [0, 0, 0], size: 'small', color: '#0891b2',
-    tags: ['convex', 'optimization', 'polytope'],
+    tags: ['geometry', 'convex', 'optimization', 'polytope'],
     basics: {
       definition: { zh: '研究凸集（对任意两点连线仍含于该集的集合）、凸函数和多面体的性质。', en: 'Studies convex sets (sets containing all line segments between any two points), convex functions, and polytopes.' },
       scope: { zh: '凸集分离定理、Minkowski和、Brunn-Minkowski理论、多面体组合。', en: 'Convex separation theorems, Minkowski sum, Brunn-Minkowski theory, polytope combinatorics.' },
@@ -362,7 +362,7 @@ export const geometryFields: FieldNode[] = [
     },
     level: 2, parentId: 'geometry', childIds: [],
     position: [0, 0, 0], size: 'medium', color: '#06b6d4',
-    tags: ['algorithm', 'computational', 'gis'],
+    tags: ['geometry', 'algorithm', 'computational', 'gis'],
     basics: {
       definition: { zh: '设计和分析处理几何数据的算法，关注效率（时间/空间复杂度）和数值稳定性。', en: 'Designing and analyzing algorithms for processing geometric data, focusing on efficiency (time/space complexity) and numerical stability.' },
       scope: { zh: '凸包算法、Voronoi图/Delaunay三角剖分、线段相交、最近邻查询、多边形操作、运动规划。', en: 'Convex hull algorithms, Voronoi diagrams/Delaunay triangulation, segment intersection, nearest neighbor queries, polygon operations, motion planning.' },
@@ -453,7 +453,7 @@ export const geometryFields: FieldNode[] = [
     },
     level: 2, parentId: 'algebraic-geometry', childIds: [],
     position: [0, 0, 0], size: 'medium', color: '#155e75',
-    tags: ['scheme', 'sheaf', 'cohomology'],
+    tags: ['algebraic-geometry', 'scheme', 'sheaf', 'cohomology'],
     basics: {
       definition: { zh: '概型是带环层结构的局部环谱空间。仿射概型对应交换环的素谱，是最基本的几何对象。', en: 'A scheme is a locally ringed space with a structure sheaf. Affine schemes correspond to spectra of commutative rings.' },
       scope: { zh: '仿射概型与射影概型、态射、纤维积、可分/平坦态射、上同调理论。', en: 'Affine & projective schemes, morphisms, fiber products, separable/flat morphisms, cohomology theories.' },
@@ -483,7 +483,7 @@ export const geometryFields: FieldNode[] = [
     },
     level: 2, parentId: 'algebraic-geometry', childIds: [],
     position: [0, 0, 0], size: 'medium', color: '#164e63',
-    tags: ['birational', 'mmp', 'classification'],
+    tags: ['algebraic-geometry', 'birational', 'mmp', 'classification'],
     basics: {
       definition: { zh: '双有理映射是有理映射的同构限制在某个开稠子集上。双有理等价的簇具有相同的有理函数域。', en: 'Birational maps are rational maps that are isomorphisms on some open dense subset. Birationally equivalent varieties share the same function field.' },
       scope: { zh: '极小模型纲领(MMP)、翻转、终止定理、Fano簇、一般型簇、丰沛除子。', en: 'Minimal Model Program (MMP), flips, termination theorem, Fano varieties, varieties of general type, ample divisors.' },
@@ -608,7 +608,7 @@ export const geometryFields: FieldNode[] = [
     },
     level: 2, parentId: 'differential-geometry-main', childIds: [],
     position: [0, 0, 0], size: 'medium', color: '#0e7490',
-    tags: ['symplectic', 'hamiltonian', 'mechanics'],
+    tags: ['differential-geometry', 'symplectic', 'hamiltonian', 'mechanics'],
     basics: {
       definition: { zh: '偶数维光滑流形上配备闭的非退化反对称2-形式（辛形式）后的几何结构。', en: 'Geometric structure on even-dimensional smooth manifolds equipped with closed nondegenerate antisymmetric 2-form (symplectic form).' },
       scope: { zh: '辛形式与达布定理、辛拓扑、Hamilton力学、Lagrangian子流形、Gromov-Witten不变量、Fukaya范畴。', en: 'Symplectic forms & Darboux theorem, symplectic topology, Hamiltonian mechanics, Lagrangian submanifolds, Gromov-Witten invariants, Fukaya category.' },
@@ -649,7 +649,7 @@ export const geometryFields: FieldNode[] = [
     },
     level: 2, parentId: 'differential-geometry-main', childIds: [],
     position: [0, 0, 0], size: 'medium', color: '#0891b2',
-    tags: ['complex', 'kahler', 'hermitian'],
+    tags: ['differential-geometry', 'complex', 'kahler', 'hermitian'],
     basics: {
       definition: { zh: '复流形是带有全纯转移函数图的微分流形。Kähler流形同时具有复、黎曼和辛三种结构。', en: 'Complex manifold is a differentiable manifold with holomorphic transition maps. Kähler manifolds simultaneously carry complex, Riemannian, and symplectic structures.' },
       scope: { zh: '几乎复结构与可积性、Hermite度量、Kähler几何、Hodge理论、复芒福德理论、Calabi-Yau流形。', en: 'Almost complex structures & integrability, Hermitian metrics, Kähler geometry, Hodge theory, complex Monge-Ampère, Calabi-Yau manifolds.' },

@@ -58,5 +58,45 @@
   "errors": {
     "loadFailed": "Failed to load",
     "notFound": "Content not found"
+  },
+  "sphere": {
+    "panelTitle": "Parameters",
+    "confirm": "Apply",
+    "resetDraft": "Discard Changes",
+    "resetDefault": "Reset to Default",
+    "unsavedHint": "Unsaved changes pending",
+    "backToMain": "Back to Scene",
+    "testPageTitle": "Sphere Style Test",
+    "selected": "Selected",
+    "select": "Select Style",
+    "fieldColor": "Field Color",
+    "basic": "Basic",
+    "core": "Core Sphere",
+    "gridLines": "Grid Lines",
+    "particles": "Particles",
+    "enableParticles": "Enable Particles",
+    "general": "General",
+    "color": "Color",
+    "radius": "Radius",
+    "opacity": "Opacity",
+    "metalness": "Metalness",
+    "roughness": "Roughness",
+    "emissiveIntensity": "Emissive Intensity",
+    "clearcoat": "Clearcoat",
+    "latLines": "Latitude Lines",
+    "lonLines": "Longitude Lines",
+    "lineOpacity": "Line Opacity",
+    "particleCount": "Particle Count",
+    "particleSize": "Particle Size",
+    "particleOpacity": "Particle Opacity",
+    "autoRotate": "Auto Rotate",
+    "variant": {
+      "minimal": "Minimal",
+      "physical": "Physical",
+      "wireframe": "Wireframe",
+      "grid": "Grid",
+      "glowing": "Glowing",
+      "full": "Full"
+    }
   }
 }

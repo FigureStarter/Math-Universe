@@ -58,5 +58,45 @@
   "errors": {
     "loadFailed": "加载失败",
     "notFound": "内容未找到"
+  },
+  "sphere": {
+    "panelTitle": "参数调节",
+    "confirm": "确认应用",
+    "resetDraft": "撤销未保存更改",
+    "resetDefault": "恢复默认",
+    "unsavedHint": "有未保存的更改",
+    "backToMain": "返回主场景",
+    "testPageTitle": "球体样式测试",
+    "selected": "已选中",
+    "select": "选择此样式",
+    "fieldColor": "领域色",
+    "basic": "基础",
+    "core": "核心球体",
+    "gridLines": "网格线",
+    "particles": "粒子效果",
+    "enableParticles": "启用粒子",
+    "general": "通用",
+    "color": "颜色",
+    "radius": "半径",
+    "opacity": "透明度",
+    "metalness": "金属度",
+    "roughness": "粗糙度",
+    "emissiveIntensity": "发光强度",
+    "clearcoat": "清漆",
+    "latLines": "纬线数量",
+    "lonLines": "经线数量",
+    "lineOpacity": "线条透明度",
+    "particleCount": "粒子数量",
+    "particleSize": "粒子大小",
+    "particleOpacity": "粒子透明度",
+    "autoRotate": "自动旋转",
+    "variant": {
+      "minimal": "极简",
+      "physical": "物理材质",
+      "wireframe": "线框",
+      "grid": "经纬网格",
+      "glowing": "发光",
+      "full": "完整"
+    }
   }
 }

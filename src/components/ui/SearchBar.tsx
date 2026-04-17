@@ -64,7 +64,7 @@ export default function SearchBar() {
     if (!isFocused && !isDraggingRef.current) {
       hideTimerRef.current = setTimeout(() => {
         setIsExpanded(false);
-      }, 3500);
+      }, 8000);
     }
   }, [isFocused]);
 

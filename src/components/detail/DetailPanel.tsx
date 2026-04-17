@@ -202,7 +202,7 @@ function FormulasTab({ field }: { field: FieldNode }) {
       {field.formulas.map((formula) => (
         <div
           key={formula.id}
-          className="glass-light rounded-xl p-4"
+          className="glass-light rounded-xl p-4 min-w-0 overflow-x-auto"
         >
           <div className="flex items-center justify-between mb-3">
             <h4 className="text-white font-medium">{formula.name[language]}</h4>

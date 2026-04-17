@@ -5,7 +5,7 @@
  * 使用斐波那契球面采样 + 螺旋分布确保视觉均匀
  */
 
-import { FieldNode } from '@/types';
+import { FieldNode, CATEGORY_TO_FILTER_GROUP, FilterMode } from '@/types';
 
 // 斐波那契球面采样 — 均匀分布N个点在球面上
 export function fibonacciSphere(count: number, radius: number): [number, number, number][] {
@@ -140,25 +140,11 @@ export function assignPositions(fields: FieldNode[]): FieldNode[] {
   return [...updatedL1, ...updatedL2];
 }
 
-// 从 tags 推断所属筛选组
+// 从 tags 推断所属筛选组（复用 CATEGORY_TO_FILTER_GROUP，避免重复维护）
 function getFilterGroup(tags: string[]): string {
-  const groupTags: Record<string, string[]> = {
-    'logic-group': ['logic', 'foundations', 'set-theory'],
-    'algebra-group': ['algebra', 'linear-algebra', 'abstract-algebra', 'group-theory', 'ring-field'],
-    'geometry-group': ['geometry', 'euclidean', 'non-euclidean', 'differential-geometry', 'algebraic-geometry', 'topology-geometry'],
-    'analysis-group': ['analysis', 'real-analysis', 'complex-analysis', 'functional-analysis', 'measure-theory', 'differential-equations', 'harmonic-analysis'],
-    'topology-group': ['topology', 'algebraic-topology', 'differential-topology'],
-    'probability-group': ['probability', 'statistics'],
-    'discrete-group': ['discrete', 'combinatorics', 'graph-theory'],
-    'applied-group': ['applied', 'numerical', 'optimization', 'operations-research'],
-    'mathphysics-group': ['mathphysics'],
-    'interdisciplinary-group': ['computer-science', 'cryptography', 'interdisciplinary', 'mathematical-biology', 'mathematical-finance'],
-  };
-
   for (const tag of tags) {
-    for (const [group, tagsForGroup] of Object.entries(groupTags)) {
-      if (tagsForGroup.includes(tag)) return group;
-    }
+    const group = CATEGORY_TO_FILTER_GROUP[tag as keyof typeof CATEGORY_TO_FILTER_GROUP];
+    if (group) return group;
   }
-  return 'interdisciplinary-group'; // 默认归入交叉学科
+  return 'interdisciplinary-group';
 }
