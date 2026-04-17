@@ -19,6 +19,8 @@
 
 ### Screenshots
 
+![Math Universe - Come In View](assets/comein.png)
+
 ![Math Universe - Main View](assets/math-universe.png)
 
 ![Math Universe - Sphere Variants](assets/math-universe2.png)
